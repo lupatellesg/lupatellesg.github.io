@@ -137,9 +137,10 @@
     transition: .5s;
     margin: 25px 0;
     padding: 12px 10px;
-    width: 250px;
+    width: max-content;
     text-align: center;
     display: flex;
+    white-space: nowrap;
 }
 
 #btn-projects ion-icon,
