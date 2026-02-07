@@ -108,8 +108,6 @@
     max-width: 20px;
 }
 
-/* about container*/
-
 #name {
     font-size: 42px;
     margin-bottom: 15px;
@@ -120,16 +118,21 @@
     margin-bottom: 15px;
     font-weight: bold;
 }
+.project-description {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .description {
     max-width: 75%;
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
     line-height: 1.6;
     font-size: 1.1rem;
     color: #ccc;
 }
 
-h2 { /* Supondo que "Minhas Skills" seja um h2 */
+h2 {
+    /* Supondo que "Minhas Skills" seja um h2 */
     font-size: 2rem;
     margin-bottom: 25px;
     border-left: 5px solid var(--main-color);
@@ -145,14 +148,13 @@ h2 { /* Supondo que "Minhas Skills" seja um h2 */
     border-radius: 5px;
     text-decoration: none;
     transition: .5s;
-    margin: 25px 0;
+    margin: 25px auto;
     padding: 12px 10px;
     width: max-content;
     align-items: center;
     display: flex;
     white-space: nowrap;
     gap: 3px;
-
 }
 
 #btn-projects ion-icon,
@@ -270,3 +272,25 @@ h2 { /* Supondo que "Minhas Skills" seja um h2 */
         font-size: 60px;
     }
 }
+
+    .project-image {
+        display: flex;
+        /* Transforma o container em flexbox */
+        justify-content: center;
+        /* Centraliza horizontalmente */
+        margin: 20px 0;
+        /* Adiciona um respiro em cima e embaixo */
+        width: 100%;
+        /* Garante que a div ocupe a largura total disponível */
+    }
+
+    .project-image img {
+        max-width: 700px;
+        /* Define o tamanho máximo que você quer (substituindo o do HTML) */
+        width: 100%;
+        /* Faz com que ela seja responsiva (diminua em telas menores) */
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        /* Um toque de design para suavizar as pontas */
+    }
