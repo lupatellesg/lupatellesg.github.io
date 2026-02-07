@@ -124,6 +124,16 @@
 .description {
     max-width: 75%;
     margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+h2 { /* Supondo que "Minhas Skills" seja um h2 */
+    font-size: 2rem;
+    margin-bottom: 25px;
+    border-left: 5px solid var(--main-color);
+    padding-left: 15px;
 }
 
 #btn-projects {
@@ -141,6 +151,7 @@
     align-items: center;
     display: flex;
     white-space: nowrap;
+    gap: 3px;
 
 }
 
@@ -152,7 +163,6 @@
 #btn-projects ion-icon {
     font-size: 20px;
     max-width: 20px;
-    gap: 15px;
 }
 
 #btn-projects:hover {
@@ -166,10 +176,32 @@
     font-size: 32px;
 }
 
-#skills-container {
+.skills-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 25px;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1a1e23;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: var(--main-color);
+    transform: translateY(-5px);
+}
+
+.skill-card img {
+    width: 25px;
+    height: auto;
 }
 
 .skills-box {
