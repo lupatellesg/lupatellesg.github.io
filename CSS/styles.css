@@ -47,12 +47,11 @@ body {
     align-items: left;
     padding: 0px 12px;
     box-sizing: border-box;
-    gap: 2px;
 }
 
 #bio-container img {
     display: block;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     max-width: 350px;
     height: auto;
@@ -72,16 +71,42 @@ body {
 }
 
 #bio-image {
-    width: 175px;
-    height: 175px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+#bio-container h2 {
+    border-top: none;
+    border-left: none;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: left;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#title {
+    font-size: 24px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+#bio-container p {
+    margin-bottom: 0px;
+
 }
 
 
 #social-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 25px;
@@ -100,7 +125,7 @@ body {
 
 #email-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #email-container ion-icon,
@@ -111,7 +136,7 @@ body {
 #email-container a {
     color: var(--main-text-color);
     text-decoration: none;
-    max-width: 225px;
+    max-width: none;
 }
 
 #email-container ion-icon {
@@ -121,6 +146,36 @@ body {
     max-width: 20px;
 }
 
+#welcome-social-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+#bio-container #welcome-text {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#social-container {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#title-block {
+    border-left: 5px solid var(--main-color);
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
 #name {
     font-size: 42px;
     margin-bottom: 15px;
@@ -128,9 +183,11 @@ body {
 
 #title {
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 0;
     font-weight: bold;
 }
+
 
 .project-description h2,
 h3 {
@@ -142,10 +199,20 @@ h3 {
     margin-top: 15px;
 }
 
-
 #project-title {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    /* largura do texto apenas */
+    border-left: none;
+    /* remove a barra da esquerda */
+    border-top: 2px solid var(--main-color);
+    /* barra em cima */
+    padding-left: 0;
+    /* remove padding esquerdo */
+    /* adiciona padding em cima */
 }
 
 .description {
@@ -172,8 +239,13 @@ h3 {
 h2 {
     font-size: 2rem;
     margin-bottom: 25px;
-    border-left: 5px solid var(--main-color);
-    padding-left: 15px;
+    border-left: none;
+    border-top: 2px solid var(--main-color);
+    padding-left: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
 #btn-projects {
@@ -253,8 +325,13 @@ h2 {
     font-size: 24px;
     margin-bottom: 25px;
     font-weight: bold;
-    padding-left: 10px;
-    border-left: 5px solid var(--main-color);
+    border-left: none;
+    border-top: 2px solid var(--main-color);
+    padding-left: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
 .skills-box i {
