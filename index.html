@@ -16,23 +16,37 @@
 <body>
     <main id="container">
         <aside id="bio-container">
-            <div id="title-block">
-                <h2>Gabriel Telles</h2>
-                <p id="title"><span class="highlight">Estudante de QA</span></p>
+            <div class="bio-top-section">
+                <div id="title-block">
+                    <h2>Gabriel Telles</h2>
+                    <p id="title"><span class="highlight">Estudante de QA</span></p>
+                </div>
+
+                <img id="bio-image" src="img/teste linkedin.jpg" alt="Gabriel Telles">
+
+                <div class="description-container">
+                    <p class="job-title">QA júnior | Automação de Testes</p>
+                    <p class="skills-list">Cypress • Git • HTML/CSS/JS</p>
+                    <p class="bio-description">
+                        Experiência prática em automação e testes end-to-end.
+                        Combinando base técnica com vontade de aprender e
+                        contribuir para a qualidade do produto.
+                    </p>
+                </div>
+
+                <div id="welcome-social-container">
+                    <p id="welcome-text">Seja bem vindo!</p>
+                    <ul id="social-container">
+                        <li><a href="https://www.linkedin.com/in/lupatotellesg/" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a></li>
+                    </ul>
+                </div>
             </div>
-            <img id="bio-image" src="img/teste linkedin.jpg" alt="Gabriel Telles">
-            <p>Buscando minha primeira oportunidade como <span class="highlight">QA,</span> onde eu possa aplicar meus
-                estudos em automação e qualidade.</p>
-            <div id="welcome-social-container">
-                <p id="welcome-text">Seja bem vindo!</p>
-                <ul id="social-container">
-                    <li><a href="https://www.linkedin.com/in/lupatotellesg/" target="_blank"><ion-icon
-                                name="logo-linkedin"></ion-icon></a></li>
-                </ul>
-            </div>
+
             <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a
-                    href="mailto:gabriel.2020.lt@gmail.com">gabriel.2020.lt@gmail.com</a>
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:gabriel.2020.lt@gmail.com">gabriel.2020.lt@gmail.com</a>
             </div>
         </aside>
 
@@ -60,23 +74,25 @@
             <a href="https://github.com/lupatellesg/first-qa-project" target="_blank" id="btn-projects">
                 <ion-icon name="share-social-outline"></ion-icon> <span>Ver Repositório de Estudos</span></a>
             <h2 id="skills-title">Minhas Skills</h2>
-            <p class="description">Tecnologias que utilizo nos meus estudos:</p>
+            <p class="description-skills">Tecnologias que utilizo nos meus estudos:</p>
             <div id="skills-container">
                 <div class="skills-box">
                     <p class="skills-title">Linguagens e Web:</p>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
+                    <div class="icons-container">
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                    </div>
                 </div>
 
                 <div class="skills-box">
                     <p class="skills-title">Ferramentas:</p>
-                    <i class="devicon-cypressio-plain"></i>
-                    <i class="devicon-git-plain colored"></i>
-                    <i class="devicon-github-original"></i>
+                    <div class="icons-container">
+                        <i class="devicon-cypressio-plain"></i>
+                        <i class="devicon-git-plain colored"></i>
+                        <i class="devicon-github-original"></i>
+                    </div>
                 </div>
-
-            </div>
         </section>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
